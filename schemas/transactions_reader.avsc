@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "TransactionUnified",
+  "namespace": "example",
+  "aliases": ["TransactionV1", "TransactionV2"],
+  "fields": [
+    {"name": "id", "type": "int"},
+    {"name": "event_time", "type": "string"},
+    {"name": "total_amount", "type": "double", "aliases": ["amount"]},
+    {"name": "user_email", "type": "string", "default": ""},
+    {"name": "currency", "type": "string", "default": ""}
+  ]
+}
